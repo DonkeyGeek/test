@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+h1 {
+  color: rgb(40, 44, 52);
+  margin-bottom: 0px;
+  margin-top: 40px;
+  font-size: 60px;
+  line-height: 65px;
+  font-weight: 700;
+}
+
+.active {
+  border-bottom: 4px solid #61DAFB;
+}
+
+.navbar {
+  padding-bottom: 0;
+}
