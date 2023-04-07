@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Community from './components/Community';
 import Docs from './components/Docs';
@@ -27,11 +27,7 @@ class App extends React.Component {
         <Menu />
         <Switch>
           <Route exact path="/" component={Docs} />
-          {/* <Route path="/tutorial" component={Tutorials} /> */}
-          <Route path="/tutorial" render={() => (
-            this.state.underConst.Tutorials ? (<Redirect to="/" />) : (<Tutorials />)
-
-          )} />
+          <Route path="/tutorial" component={Tutorials} />
           <Route strict path="/community" component={Community} />
           <Route component={ErrorPage} />
         </Switch>
